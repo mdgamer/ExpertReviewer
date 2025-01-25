@@ -554,7 +554,7 @@ img
 }
 
 /* For mobile devices */
-@media (max-width: 991px) {
+@media (min-width: 400px) and (max-width: 1366px) {
     .menu-btn {
         display: block;
         height: 30px;
@@ -656,43 +656,4 @@ img
     .footer-links ul li a {
         font-size: 16px;
     }
-    
 }
-
-/* For very small screens (like older phones) */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-
-    .nav li {
-        margin: 5px 0;
-    }
-
-    .btn {
-        padding: 8px 20px;
-        font-size: 14px;
-    }
-
-    .search-bar input {
-        font-size: 12px;
-    }
-
-    .search-bar button {
-        font-size: 12px;
-    }
-
-    .logo {
-        font-size: 1.2rem;
-    }
-
-    .categories-strip {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    img {
-        height: auto;
-    }
-}
-
