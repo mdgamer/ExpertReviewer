@@ -7,15 +7,16 @@
     <link rel="icon" type="image/png" href="Images/Er.png" />
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="Js/script.js"></script>
 </head>
 <body>
 <header class="nav-bar">
     <div class="header-container">
         <div class="logo">
-            <a href="#">Expert<span>Reviewer</span></a>
+            <a href="Index.html">Expert<span>Reviewer</span></a>
         </div>
         <ul class="nav">
-            <li><a href="#">Browse Products<i class="arrow"></i><div class="line"></div></a></li>
+            <li><a href="Categories.html">Browse Products<i class="arrow"></i><div class="line"></div></a></li>
             <li><a href="#">Reviews<div class="line"></div></a></li>
             <li><a href="#">About<div class="line"></div></a></li>
             <li><a href="#">Today's Deals<div class="line"></div></a></li>
@@ -235,69 +236,5 @@
     <p>Copyright © 2025 by ExpertReviewer.com</p>
   </div>
 </footer>
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const browseProductsLink = document.querySelector('.nav li:first-child a'); // Select "Browse Products"
-        const collapsibleContainer = document.querySelector('.header-collapsible-container'); // Collapsible container
-
-        let isHovering = false; // To track if the mouse is hovering over the link or container
-
-        // Show the container when hovering over "Browse Products"
-        browseProductsLink.addEventListener('mouseenter', () => {
-            isHovering = true;
-            collapsibleContainer.style.display = 'flex'; // Show container
-            setTimeout(() => {
-                collapsibleContainer.style.opacity = '1'; // Fade in smoothly
-            }, 10); // Small delay to allow display change to take effect
-        });
-
-        // Show the container when hovering over the collapsible container
-        collapsibleContainer.addEventListener('mouseenter', () => {
-            isHovering = true;
-            collapsibleContainer.style.opacity = '1'; // Ensure it remains visible
-        });
-
-        // Hide the container when the mouse leaves both elements
-        browseProductsLink.addEventListener('mouseleave', () => {
-            isHovering = false;
-            setTimeout(() => {
-                if (!isHovering) {
-                    collapsibleContainer.style.opacity = '0'; // Fade out smoothly
-                    setTimeout(() => {
-                        collapsibleContainer.style.display = 'none'; // Hide container after fading out
-                    }, 300); // Match the fade-out duration
-                }
-            }, 100); // Delay for smooth transition
-        });
-
-        collapsibleContainer.addEventListener('mouseleave', () => {
-            isHovering = false;
-            setTimeout(() => {
-                if (!isHovering) {
-                    collapsibleContainer.style.opacity = '0'; // Fade out smoothly
-                    setTimeout(() => {
-                        collapsibleContainer.style.display = 'none'; // Hide container after fading out
-                    }, 300); // Match the fade-out duration
-                }
-            }, 100); // Delay for smooth transition
-        });
-    });
-    document.addEventListener('DOMContentLoaded', () => {
-    const menuBtn = document.querySelector('.menu-btn');
-    const navLinks = document.querySelector('.nav');
-
-    menuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('show'); // Add or remove 'show' class
-    });
-
-    // Optional: Close the menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!menuBtn.contains(e.target) && !navLinks.contains(e.target)) {
-            navLinks.classList.remove('show');
-        }
-    });
-});
-</script>
 </body>
 </html>

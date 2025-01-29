@@ -1,0 +1,65 @@
+.categories-list-shoes
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product-item-container
+{
+    width: 100%;
+}
+.item-box {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: Georgia, Times, 'Times New Roman', serif, sans-serif;
+    color: var(--bg-nav-black);
+    line-height: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    gap: 15px;
+    padding: 20px;
+}
+
+.item-box:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.product-item .item-box h2
+{
+    font-size: 20px;
+}
+
+.product-item-img
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    gap: 20px; /* Space between rows and items */
+    margin:  0px 20px 30px;
+}
+
+.row .product-item {
+    flex: 1 1 calc(33.33% - 20px); /* 3 items per row with spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px; /* Limit the width of items */
+}
+
