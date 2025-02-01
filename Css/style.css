@@ -640,7 +640,8 @@ img
     }
     .lower-sections-3-item img
     {
-        width: 200px;
+        width: 100px;
+        height: auto;
     }
     .btn {
         width: 100%;
