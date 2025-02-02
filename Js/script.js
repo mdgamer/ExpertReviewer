@@ -60,3 +60,22 @@
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const reviewCards = document.querySelectorAll(".review-card");
+
+    // Loop through each review card
+    reviewCards.forEach(card => {
+        const reviewText = card.querySelector(".review-text");
+
+        // Add click event listener to the review text
+        reviewText.addEventListener("click", function () {
+            // Toggle the 'expanded' class to expand/collapse the review text
+            this.classList.toggle("expanded");
+
+            // Optionally, toggle the card to add/remove an "expanded" state for styling
+            card.classList.toggle("expanded");
+        });
+    });
+});
+

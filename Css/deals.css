@@ -70,15 +70,6 @@
     flex-shrink: 0;
 }
 
-/* Rating Star Image */
-.deal-item-box-above .rating img {
-    width: 100px;
-    height: auto;
-    margin: 10px 0;
-    display: block;
-    object-fit: contain;
-}
-
 /* Deal Button */
 .deal-button {
     width: 200px;
@@ -339,6 +330,14 @@
     background: #ff9800;
 }
 
+.star-rating
+{
+    height: auto;
+    margin: 10px 0;
+}
+.star-rating .checked {
+    color: orange;
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -438,11 +437,6 @@
     .deal-item-box-below-deal .btn {
         width: 100%;
         padding: 10px;
-    }
-
-    .site-footer ul {
-        flex-direction: column;
-        text-align: center;
     }
 }
 
