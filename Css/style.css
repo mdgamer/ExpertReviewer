@@ -662,4 +662,10 @@ img
     }
 }
 
-
+@media (max-width: 390px)
+{
+    .header-info-section
+    {
+       padding-top: 20px;
+    }
+}
