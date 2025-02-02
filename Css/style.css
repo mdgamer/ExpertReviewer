@@ -662,7 +662,7 @@ img
     }
 }
 
-@media (max-width: 390px)
+@media (min-width: 380px)
 {
     .header-info-section
     {
