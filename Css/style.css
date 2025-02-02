@@ -554,7 +554,7 @@ img
 }
 
 /* For mobile devices */
-@media (min-width: 400px) and (max-width: 1366px) {
+@media (min-width: 380px) and (max-width: 1366px) {
     .menu-btn {
         display: block;
         height: 30px;
